@@ -3,6 +3,7 @@
 <br/>
 The server component for <a href="https://github.com/checktheroads/whodat"><code>whodat</code><a/>
 <br/>
+<a href="https://github.com/checktheroads/whodat/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/checktheroads/whodat?color=000000&style=for-the-badge"/>
+</a>
 </div>
-
-[![GitHub](https://img.shields.io/github/license/checktheroads/whodat?color=000000&style=for-the-badge)](https://github.com/checktheroads/whodat/blob/main/LICENSE)
