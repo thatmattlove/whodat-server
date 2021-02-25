@@ -79,17 +79,20 @@ export async function getPrefixInfo(target: string): Promise<PrefixInfo> {
  */
 export async function getASNInfo(target: string): Promise<ASNInfo> {
   const { org, asn, country } = await bgpToolsQuery(target);
-  const {
-    // deno-lint-ignore camelcase
-    data: [{ looking_glass, website: _website }],
-  } = await getPeeringDbNet(target);
+  const { data } = await getPeeringDbNet(target);
   let lg = null;
   let website = null;
-  if (looking_glass !== "") {
-    lg = looking_glass;
+
+  if (data.length !== 0) {
+    // deno-lint-ignore camelcase
+    const [{ looking_glass, website: _website }] = data;
+    if (looking_glass !== "") {
+      lg = looking_glass;
+    }
+    if (_website !== "") {
+      website = _website;
+    }
   }
-  if (_website !== "") {
-    website = _website;
-  }
+
   return { org, asn, country, lg, website };
 }
