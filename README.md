@@ -1,7 +1,7 @@
 <div align="center">
 <h3><code>whodat</code> (server)</h3>
 <br/>
-The server component for [`whodat`](https://github.com/checktheroads/whodat).
+The server component for <a href="https://github.com/checktheroads/whodat"><code>whodat</code><a/>
 <br/>
 </div>
 
