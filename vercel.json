@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/**/*.[jt]s": { "runtime": "vercel-deno@0.7.6" }
+  },
+  "build": { "env": { "DENO_VERSION": "1.7.2" } }
+}
